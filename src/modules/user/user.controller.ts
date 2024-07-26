@@ -7,9 +7,9 @@ export class UserController {
   constructor(private readonly userService: UserService) { }
 
   @Get()
-  getHello(@Query('version') version): string {
+  async getHello(@Query('version') version: string): Promise<string> {
     console.log(version);
-    return this.userService.getHello();
+    return await this.userService.getHello();
   }
 
   @Get('test')

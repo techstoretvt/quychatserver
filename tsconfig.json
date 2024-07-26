@@ -20,5 +20,8 @@
     "checkJs": false,
     "alwaysStrict": true,
     "noImplicitThis": true
-  }
+  },
+  "include": [
+    "src/**/*"
+  ],
 }
