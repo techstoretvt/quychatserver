@@ -1,9 +1,13 @@
-{
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable prettier/prettier */
+require('dotenv').config();
+
+module.exports = {
   "development": {
-    "username": "postgres.odhsrdmlrhhhlwflswll",
-    "password": "t3av8iC5UXJ46QV$",
+    "username": process.env.DB_USERNAME,
+    "password": process.env.DB_PASSWORD,
     "database": "postgres",
-    "host": "aws-0-us-east-1.pooler.supabase.com",
+    "host": process.env.DB_HOST,
     "dialect": "postgres"
   },
   "test": {
