@@ -8,7 +8,8 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Users extends Model {
     static associate(models) {
-      // define association here
+      // define association here 
+      // cart.belongsTo(models.User, { foreignKey: 'idUser' })
     }
   }
   Users.init({
